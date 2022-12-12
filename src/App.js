@@ -2,24 +2,25 @@ import React, { Component } from 'react';
 import './App.css';
 import Resume from './Resume';
 import Phrases from './Phrases';
+import lookingGood from './lookinggood.jpg';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-            <div class="headerstuff">
-                <h1 class="center" id="title">A Resume Header</h1>
-                <h2 class="center" id="author">By Sara Lichtarge</h2>
-            </div>
-        </header>
+        <div className="headerstuff">
+            <h1 className="center" id="title">A Resume Header</h1>
+            <h2 className="center" id="author">By Sara Lichtarge</h2>
+        </div>
 
-        <div class="top">
+        <div className="top">
           <h3> Your Resume Header:</h3>
         </div>
         <section id = "resumeHeader">
           <Resume />
         </section>
+        <img src = {lookingGood} alt="good job filler"></img>
+        <hr></hr>
         <section id = "phraseGenerator">
           <Phrases />
         </section>

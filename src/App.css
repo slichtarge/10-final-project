@@ -1,75 +1,43 @@
-/* #name{
-    font-size: 55px;
-    color: rgb(153, 0, 0);
-}
-
-.para{
-    margin-bottom: 3px;
-    font-weight: bold;
-}
-
-.col-4{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-header{
-    width: 100%;
+.headerstuff{
     font-style: bold;
+    width: 100%;
+    padding-top: 1px;
     background-color: rgb(171, 49, 49);
-    padding-bottom: 10px;
-    padding-left: 10px;
     border-bottom: 2px solid rgb(66, 66, 66);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+}
+
+#title{
+    font-size: 40px;
+}
+
+.center{
+    padding-left: 10px;
+}
+
+h2{
+    padding-bottom: 5px;
+}
+
+.top{
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 h3{
     width:100%;
     text-align: center;
     padding-top: 10px;
-}
-
-
-#container{
-    padding-top: 20px;
-    border-bottom: 1px solid rgb(223, 211, 211);
-    padding-bottom: 30px;
-}
-
-#newItem{
-    padding-left: 10px;
-    padding-top: 15px;
-    padding-bottom: 5px;
-}
-
-.subhelp{
-    display:flex;
-    padding-top: 10px;
-    padding-bottom: 60px;
-}
-
-.submit_bs{
-    margin-right:auto;
-    margin-left: auto;
-    
-}
-
-#bs_button{
-    font-size: 20px;
-}
-
-
-.box{
-    display: flex;
-    justify-content: center;
-}
-
-#consider-test{
-    padding-right: 15px;
     font-size: 30px;
 }
 
-#bs-test{
-    font-family: Trattatello, fantasy;
-    font-size: 50px;
-    color: rgb(153, 0, 0);
-} */
+hr{
+    border: none;
+    border-top:2px dashed rgb(66, 66, 66);
+}

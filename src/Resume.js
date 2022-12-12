@@ -5,12 +5,12 @@ class Resume extends Component {
   render() {
     return (
         <div className = "Resume">
-            <div id="container">
-                <div className="row justify-content-around">
-                    <div className = "col-4 d-flex justify-content-left" id = "name">
+            <div className = "wrap"> 
+                <div className = "flex-parent-element">
+                    <div className="flex-child-element" id = "name">
                         Insert Name Here
                     </div>
-                    <div className = "col-4 text-right" id = "details">
+                    <div className="flex-child-element" id="details">
                         <p className = "para">Phone: your number </p>
                         <p className = "para">E-mail: your e-mail </p>
                         <p className = "para">Website: your website </p>
@@ -18,7 +18,7 @@ class Resume extends Component {
                 </div>
             </div>
 
-            <div id="newItem">
+            <div className="newItem" id="newName">
                 <div>
                 <label for="newItemEnter">Your Name:</label>
                 </div>
@@ -26,7 +26,7 @@ class Resume extends Component {
                 <button type="submit" id="submitNewItem">update</button>
             </div>
 
-            <div id="newItem">
+            <div className="newItem">
                 <div>
                 <label for="newItemEnter">Your Phone #:</label>
                 </div>
@@ -34,7 +34,7 @@ class Resume extends Component {
                 <button type="submit" id="submitNewItem">update</button>
             </div>
 
-            <div id="newItem">
+            <div className="newItem">
                 <div>
                 <label for="newItemEnter">Your E-Mail:</label>
                 </div>
@@ -42,7 +42,7 @@ class Resume extends Component {
                 <button type="submit" id="submitNewItem">update</button>
             </div>
 
-            <div id="newItem">
+            <div className="newItem" id ="newURL">
                 <div>
                 <label for="newItemEnter">Your Website URL:</label>
                 </div>

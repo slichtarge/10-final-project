@@ -5,7 +5,7 @@ class Phrases extends Component {
   render() {
     return (
         <div className = "Phrases">
-            <div className = "added_help">
+            <div className = "added-help">
                 <h3>Need help beefing up the rest of your resume?</h3>
                 <div className = "subhelp">
                     <button type="submit" className="submit_bs" id="bs_button">Click Here</button>

@@ -1,4 +1,3 @@
-
 .subhelp{
     display:flex;
     padding-top: 10px;
@@ -24,8 +23,11 @@
 
 #consider-test{
     padding-right: 15px;
+    padding-top:30px;
     font-size: 30px;
     /* outline: solid blue; */
+    font-family: 'Trebuchet MS', sans-serif;
+
 }
 
 #bs-test{
@@ -39,4 +41,8 @@ h3{
     width:100%;
     text-align: center;
     padding-top: 10px;
+}
+
+.added-help{
+    font-family: 'Trebuchet MS', sans-serif;
 }
