@@ -1,0 +1,42 @@
+
+.subhelp{
+    display:flex;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+.submit_bs{
+    margin-right:auto;
+    margin-left: auto;
+    
+}
+
+#bs_button{
+    font-size: 20px;
+}
+
+
+.box{
+    /* border : solid rgb(153, 0, 0);; */
+    display: flex;
+    justify-content: center;
+}
+
+#consider-test{
+    padding-right: 15px;
+    font-size: 30px;
+    /* outline: solid blue; */
+}
+
+#bs-test{
+    font-family: Trattatello, fantasy;
+    font-size: 50px;
+    color: rgb(153, 0, 0);
+    /* outline: solid red; */
+}
+
+h3{
+    width:100%;
+    text-align: center;
+    padding-top: 10px;
+}
