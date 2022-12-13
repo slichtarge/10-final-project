@@ -8,7 +8,7 @@ class Phrases extends Component {
             <div className = "added-help">
                 <h3>Need help beefing up the rest of your resume?</h3>
                 <div className = "subhelp">
-                    <button type="submit" className="submit_bs" id="bs_button">Click Here</button>
+                    <button type="submit" className="submit_bs" id="bs_button" onClick={() => this.props.fetchPhrase()}>Click Here</button>
                 </div>
             </div>
 

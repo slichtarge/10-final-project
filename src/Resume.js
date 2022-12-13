@@ -11,43 +11,43 @@ class Resume extends Component {
                         Insert Name Here
                     </div>
                     <div className="flex-child-element" id="details">
-                        <p className = "para">Phone: your number </p>
-                        <p className = "para">E-mail: your e-mail </p>
-                        <p className = "para">Website: your website </p>
+                        <p className = "para" id = "phone">Phone: your number </p>
+                        <p className = "para" id = "email">E-mail: your e-mail </p>
+                        <p className = "para" id = "URL">Website: your website </p>
                     </div>
                 </div>
             </div>
 
             <div className="newItem" id="newName">
                 <div>
-                <label for="newItemEnter">Your Name:</label>
+                <label for="newNameEnter">Your Name:</label>
                 </div>
-                <input type = "text" id="newItemEnter" required></input>
-                <button type="submit" id="submitNewItem">update</button>
+                <input type = "text" id="newNameEnter" required></input>
+                <button type="submit" id="submitNewItem" onClick={() => this.props.updateName()}>update</button>
+            </div>
+
+            <div className="newItem" id ="newPhone">
+                <div>
+                <label for="newPhoneEnter">Your Phone #:</label>
+                </div>
+                <input type = "text" id="newPhoneEnter" required></input>
+                <button type="submit" id="submitNewItem" onClick={() => this.props.updatePhone()}>update</button>
             </div>
 
             <div className="newItem">
                 <div>
-                <label for="newItemEnter">Your Phone #:</label>
+                <label for="newEmailEnter">Your E-Mail:</label>
                 </div>
-                <input type = "text" id="newItemEnter" required></input>
-                <button type="submit" id="submitNewItem">update</button>
-            </div>
-
-            <div className="newItem">
-                <div>
-                <label for="newItemEnter">Your E-Mail:</label>
-                </div>
-                <input type = "text" id="newItemEnter" required></input>
-                <button type="submit" id="submitNewItem">update</button>
+                <input type = "text" id="newEmailEnter" required></input>
+                <button type="submit" id="submitNewItem"onClick={() => this.props.updateEmail()}>update</button>
             </div>
 
             <div className="newItem" id ="newURL">
                 <div>
-                <label for="newItemEnter">Your Website URL:</label>
+                <label for="newURLEnter">Your Website URL:</label>
                 </div>
-                <input type = "text" id="newItemEnter" required></input>
-                <button type="submit" id="submitNewItem">update</button>
+                <input type = "text" id="newURLEnter" required></input>
+                <button type="submit" id="submitNewItem"  onClick={() => this.props.updateURL()}>update</button>
             </div>
         </div>
     );
