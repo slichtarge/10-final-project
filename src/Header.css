@@ -39,3 +39,9 @@ hr{
     border: none;
     border-top:2px dashed rgb(66, 66, 66);
 }
+
+@media screen and (max-device-width:600px) {
+    div#root{
+        width:600px;
+    }
+}

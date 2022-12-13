@@ -105,3 +105,12 @@ img{
     transform: rotate(360deg);
     transition-duration: 1s;
 }
+
+@media screen and (max-device-width:600px) {
+    #name{
+        font-size:40px;
+    }
+    img{
+        width:600px;
+    }
+}
