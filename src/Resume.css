@@ -6,9 +6,28 @@
     padding-left: 10px;
 }
 
+#name:hover{
+    transition-duration: 1s;
+    font-size: 80px;
+}
+
 .wrap{
     display:flex;
     justify-content:center;
+}
+
+input{
+    margin-top: 5px;
+}
+
+button{
+    margin-left: 10px;
+}
+
+#submitNewItem:hover{
+    background-color:rgb(42, 195, 42);
+    size-adjust: 10rem;
+    transition-duration: 1s;
 }
 
 .flex-parent-element {
@@ -42,6 +61,10 @@
     font-weight: bold;
 }
 
+.para:hover{
+    color: rgb(153, 0, 0);
+}
+
 h3{
     width:100%;
     text-align: center;
@@ -69,4 +92,16 @@ h3{
 
 #newURL{
     padding-bottom: 40px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+}
+
+.imgBox:hover{
+    transform: rotate(360deg);
+    transition-duration: 1s;
 }

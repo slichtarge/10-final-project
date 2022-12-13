@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import lookingGood from './lookinggood.jpg';
+
 import './Resume.css';
 
 class Resume extends Component {
@@ -48,6 +50,10 @@ class Resume extends Component {
                 </div>
                 <input type = "text" id="newURLEnter" required></input>
                 <button type="submit" id="submitNewItem"  onClick={() => this.props.updateURL()}>update</button>
+            </div>
+
+            <div className = "imgBox">
+                <img src = {lookingGood} alt="good job filler"></img>
             </div>
         </div>
     );

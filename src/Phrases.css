@@ -15,6 +15,11 @@
 }
 
 
+#bs_button:hover{
+    background-color:rgb(63, 178, 244);
+    width: 10rem;
+}
+
 .box{
     /* border : solid rgb(153, 0, 0);; */
     display: flex;

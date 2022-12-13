@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import Header from './Header';
 import Resume from './Resume';
 import Phrases from './Phrases';
-import lookingGood from './lookinggood.jpg';
 
 const website_url = "https://shrtlnk.dev/api/v2/link";
 const key = "CZ4p7azX3o1lQBOZniUo8ZhDiWL0REv8QjJYHwtDZ2AKf";
@@ -124,14 +124,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="headerstuff">
-            <h1 className="center" id="title">A Resume Header</h1>
-            <h2 className="center" id="author">By Sara Lichtarge</h2>
-        </div>
-
-        <div className="top">
-          <h3> Your Resume Header:</h3>
-        </div>
+        <section id = "Header">
+          <Header/>
+        </section>
         <section id = "resumeHeader">
           <Resume 
           updateName = {this.updateName}
@@ -141,7 +136,7 @@ class App extends Component {
           displayURL = {this.displayURL}
           />
         </section>
-        <img src = {lookingGood} alt="good job filler"></img>
+        
         <hr></hr>
         <section id = "phraseGenerator">
           <Phrases 
