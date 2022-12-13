@@ -54,6 +54,7 @@ class Resume extends Component {
 
             <div className = "imgBox">
                 <img src = {lookingGood} alt="good job filler"></img>
+                {/* image source: https://www.independent.com/2021/10/20/best-of-santa-barbara-2021-looking-good/ */}
             </div>
         </div>
     );
