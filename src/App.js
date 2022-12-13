@@ -17,6 +17,7 @@ class App extends Component {
     this.updateName = this.updateName.bind(this);
     this.updateEmail = this.updateEmail.bind(this);
     this.updatePhone = this.updatePhone.bind(this);
+    this.displayURL = this.displayURL.bind(this);
     this.updateWebsite = this.updateURL.bind(this);
 
     // // phrases methods
@@ -63,33 +64,30 @@ class App extends Component {
     }
   }
 
+  displayURL(URL_var){
+    let curr_URL = document.getElementById("URL").textContent;
+    console.log("you wanna update ur URL from " + curr_URL+ " to "+ URL_var);
+    document.getElementById("URL").textContent = URL_var;
+    document.getElementById("newURLEnter").value = "";
+  }
+
   updateURL(){
     let long_url = document.getElementById("newURLEnter").value;
-    // if(long_url == "" || long_url == null){
-    //   alert("ERROR: There's no URL entered.");
-    //   return;
-    // }
-
+    let self = this;
     var data = {
       url: long_url
     }
     console.log("entered updateURL");
     // 2. Make an AJAX call to the API and save the generated name in a variable.
     var xhttp = new XMLHttpRequest();
+    let response = "";
 
-    // 3. Call the displayFakeName() function from within your onreadystatechange function, and pass in the generated name.
+    // 3. Call the displayURL() function from within your onreadystatechange function, and pass in the generated URL.
     xhttp.onreadystatechange = function(){
-        if (this.readyState == 4 && this.status == 200) {
-            console.log("url status is good");
-            // let slip = JSON.parse(this.responseText).slip;
-            console.log(this.responseText);
-            let short = JSON.parse(this.responseText).shrtlnk;
-            console.log("SHORT: "+ short);
-        }
-        else{
-            console.log(this.responseText);
-            console.log("this.status " + this.status);
-            console.log("you suck");
+        if (this.status == 201) {
+          response = JSON.parse(this.responseText).shrtlnk;
+          console.log("Response: " + response);
+          self.displayURL(response);
         }
     };
 
@@ -97,29 +95,14 @@ class App extends Component {
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.setRequestHeader("api-key",key);
     xhttp.send(JSON.stringify(data));
-    console.log("If you see this in the console, the getFakeNameFromApi() function was called.")
-
-
-
-
-    // let URL_var = long_url;
-    // if(URL_var != "" && URL_var !=null){
-    //   let curr_URL = document.getElementById("URL").textContent;
-    // console.log("you wanna update ur URL from " + curr_URL+ " to "+ URL_var);
-    // document.getElementById("URL").textContent = URL_var;
-    // document.getElementById("newURLEnter").value = "";
-    // }
-    // else{
-    //   alert("ERROR: There's no URL entered.");
-    // }
   }
+
 
   fetchPhrase() {
     console.log("entered fetchPhrase");
     // 2. Make an AJAX call to the API and save the generated name in a variable.
     var xhttp = new XMLHttpRequest();
 
-    // 3. Call the displayFakeName() function from within your onreadystatechange function, and pass in the generated name.
     xhttp.onreadystatechange = function(){
         if (this.readyState == 4 && this.status == 200) {
             console.log("good status");
@@ -133,7 +116,6 @@ class App extends Component {
     xhttp.open("GET", buzzword_url, true);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send();
-    console.log("If you see this in the console, the fetchPhrase() function was called.")
 }
 
 
@@ -156,6 +138,7 @@ class App extends Component {
           updateEmail = {this.updateEmail}
           updatePhone = {this.updatePhone}
           updateURL = {this.updateURL}
+          displayURL = {this.displayURL}
           />
         </section>
         <img src = {lookingGood} alt="good job filler"></img>
