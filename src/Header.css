@@ -44,4 +44,18 @@ hr{
     div#root{
         width:600px;
     }
+    .headerstuff{
+        height:300px;
+    }
+    #title{
+        font-size: 60px;
+    }
+
+    h2{
+        font-size: 45px;
+    }
+
+    h3{
+        font-size: 40px;
+    }
 }
